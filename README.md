@@ -27,7 +27,7 @@ A **MapReduce job** usually **splits** the input data-set into independent chunk
 Applications specify the **input/output** locations and supply **map and reduce functions** via implementations of appropriate interfaces and/or abstract-classes (minimum requiremnets). These, and other job parameters, comprise the **job configuration**.
 The Hadoop job client then **submits the job** (jar/executable etc.) **and configuration** to the *ResourceManager* which then assumes the responsibility of distributing the software/configuration to the workers, scheduling tasks and monitoring them, providing status and diagnostic information to the job-client.
 
-All in all, you pick your application, your input dataset and provide Map and Reduce Functions following a Map Reduce programming model and you're good to play with Big Data **(cough..cough..hopefully :smile:)**
+All in all, pick application then input dataset and provide Map and Reduce Functions following a Map Reduce programming model.
 
 ### Inputs and Outputs 
 One of the most important concepts to grasp is that MapReduce framework operates ONLY on **<key, value> pairs**, that is, the framework views the input to the job as a set of <key, value> pairs and produces a set of <key, value> pairs as the output of the job.
@@ -35,14 +35,14 @@ The key and value type classes have to be serializable by the framework and henc
 
 **Example:** In Java we use **IntWritable** instead of ~Integer~, and **Text** instead of ~String~.
 
-I used text files from the [Gutenberg project](https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/), in Plain Text UTF-8 format as my input dataset.
+We used text files from the [Gutenberg project](https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/), in Plain Text UTF-8 format as my input dataset.
 
 ## Hadoop: Setting up a Single Node Cluster.
-1. Execute the following command to download Hadoop on your machine: `wget https://downloads.apache.org/hadoop/common/hadoop-2.10.0/hadoop-2.10.0.tar.gz`
+1. Execute the following command to download Hadoop on machine: `wget https://downloads.apache.org/hadoop/common/hadoop-2.10.0/hadoop-2.10.0.tar.gz`
 
 2. Extract the downloaded file using the command: `tar -xzvf hadoop-2.10.0.tar.gz`
 
-3. Setup the downloaded Hadoop version on your machine in a Pseudo Distributed mode. Follow these [steps](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation).
+3. Setup the downloaded Hadoop version on machine in a Pseudo Distributed mode. Follow these [steps](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation).
 
 
 ## The Application: WordCount
