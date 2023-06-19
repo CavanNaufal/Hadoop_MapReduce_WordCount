@@ -47,7 +47,7 @@ We used text files from the [Gutenberg project](https://www.i3s.unice.fr/~jplozi
 
 ## The Application: WordCount
 
-<p align='center'><img src="https://www.researchgate.net/profile/K-Srinivasa/publication/281768670/figure/fig3/AS:282303059251209@1444317702935/Different-phases-of-map-reduce-in-word-count-example.png"/></p>
+<p align='center'><img src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2017/04/Map-only.png"/></p>
 
 *Well...the name and the sourcecode says it all.* **WordCount** is a simple application that counts the number of occurrences of each word in a given input set. **(Hmm.. a really big one in that manner)**
 
