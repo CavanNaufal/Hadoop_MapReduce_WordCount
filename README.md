@@ -1,11 +1,29 @@
-# **Group 2 - Sistem Basis Data - 02**
-## **Anggota Kelompok :**
-```
-- Muhammad Cavan Naufal Azizi (2106702730)
-- RBS Kresna Ramdani Galih (2106702610)
-- Jeremy Ganda Pandapotan (2106731573)
-- Fahrezy H (2106731466)
-```
+<h1 align="center">Group 2 - Sistem Basis Data - 02</h1>
+<h3 align="center">
+  <a href="https://github.com/CavanNaufal">
+    Cavan Naufal
+  </a>
+  - 2106702730
+</h3>
+<h3 align="center">
+  <a href="https://github.com/">
+    RBS Kresna Ramdani Galih
+  </a>
+  - 2106702610
+</h3>
+<h3 align="center">
+  <a href="https://github.com/JGDoubleP">
+    Jeremy Ganda Pandapotan
+  </a>
+  - 2106731573
+</h3>
+<h3 align="center">
+  <a href="https://github.com/">
+    Fahrezy Hutapea
+  </a>
+  - 2106731466
+</h3>
+<p>All of us are undergradute student of Computer Engineering Major, Department of Electrical Engineering, Faculty of Engineering, Universitas Indonesia.</p>
 
 # **Hadoop WordCount**
 This individual work was developed as an assignment for **Netcentric computing and Distributed Systems** course from CCE Department, Faculty of Engineering, Alexandria University Spring 2020 Offering.
