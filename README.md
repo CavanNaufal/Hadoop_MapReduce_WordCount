@@ -2,16 +2,15 @@
 ## **Anggota Kelompok :**
 ```
 - Muhammad Cavan Naufal Azizi (2106702730)
-- 
-- 
-- 
+- RBS Kresna Ramdani Galih (2106702610)
+- Jeremy Ganda Pandapotan (2106731573)
+- Fahrezy H (2106731466)
 ```
 
 # **Hadoop WordCount**
 This individual work was developed as an assignment for **Netcentric computing and Distributed Systems** course from CCE Department, Faculty of Engineering, Alexandria University Spring 2020 Offering.
 
 <p align='center'><img src="https://itwadi.com/files/Hadoop.png"/></p>
-
 
 ## What is Hadoop ?
 [Apache Hadoop](https://hadoop.apache.org/) is a collection of open-source software utilities that facilitate using a network of many computers to solve problems involving massive amounts of data and computation. It provides massive storage for any kind of data, enormous processing power and the ability to handle virtually limitless concurrent tasks or jobs.
