@@ -6,7 +6,7 @@
   - 2106702730
 </h3>
 <h3 align="center">
-  <a href="https://github.com/">
+  <a href="https://github.com/kresnarmdn">
     RBS Kresna Ramdani Galih
   </a>
   - 2106702610
