@@ -1,7 +1,7 @@
 <h1 align="center">Group 2 - Sistem Basis Data - 02</h1>
 <h3 align="center">
   <a href="https://github.com/CavanNaufal">
-    Cavan Naufal
+    Muhammad Cavan Naufal Azizi
   </a>
   - 2106702730
 </h3>
