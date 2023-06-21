@@ -91,7 +91,7 @@ We highly recommend reading the full in detail walk-through found in the [Offici
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/ec430f00-9315-4474-abc4-8fb1bad061d0)
 
 ### Dataset
-Gutenberg project](https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/)
+[Gutenberg project](https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/)
 
 ---
 
