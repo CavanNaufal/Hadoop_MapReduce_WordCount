@@ -79,6 +79,7 @@ We used text files from the [Gutenberg project](https://www.i3s.unice.fr/~jplozi
 
 We highly recommend reading the full in detail walk-through found in the [Official Map Reduce Hadoop Tutorial](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v1.0). And then, the next step is to implement your own work for this application to get started wth Hadoop and Map Reduce. :book: :green_book:
 
+---
 ## Installation Tutorial
 
 ### 1.  ```Access this oracle website below```
@@ -192,6 +193,7 @@ https://github.com/cdarlint/winutils
 
 Setup the downloaded Hadoop version on machine in a Pseudo Distributed mode. Follow these [steps](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation).
 
+---
 ## Hadoop WordCount (JAVA)
 
 ### 1.  ```Create Maven Project (Using IntelliJ) dengan Language Java dan Build System Maven..```
