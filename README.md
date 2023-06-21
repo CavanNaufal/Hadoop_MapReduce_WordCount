@@ -191,6 +191,81 @@ https://github.com/cdarlint/winutils
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/822aded6-3399-4cf4-a34d-289539e54780)
 
 Setup the downloaded Hadoop version on machine in a Pseudo Distributed mode. Follow these [steps](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation).
+
+## Hadoop WordCount (JAVA)
+
+### 1.  ```Create Maven Project (Using IntelliJ) dengan Language Java dan Build System Maven..```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/0dc3c0a0-9a4c-40ac-82d6-f40adc9f895f)
+
+### 2.  ```add dependencies at pom.xml..```
+```
+   <dependencies>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-core</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+    </dependencies>
+
+```
+
+### 3.  ```Create Package and inside the package create a java file containing the wordcount code.```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/2ccba58d-f7e7-49e3-a5f3-340015ac2c75)
+
+The code can be seen in the link:
+```
+https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Source_Code
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/ab345efa-0db9-4053-b131-597fb2386791)
+
+### 4.  ```Then create a jar file with maven.```
+```mvn clean```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/a90118d1-3f16-44f4-94f4-68202f64be31)
+```mvn install```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/585b8d91-01a8-427f-8bfd-509abb2702a7)
+
+Maka pada target folder terdapat file jar.	
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/c6cc9369-9f8f-4265-b564-aa2cff402a9a)
+
+### 5.  ```Create input file (.txt)```
+example : 
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/28db6b2a-d718-41da-b380-229e22f1b1f1)
+
+### 6.  ```run cmd as administrator then cd to the sbin folder```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/1430c429-5591-4aa2-8e66-79b6f14529ea)
+
+### 7.  ```Run Hadoop and jps to make sure hadoop runs properly.start-all. cmd```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/06ae7964-3c9f-47cc-882a-2e7b69be37ff)
+
+```hadoop fs -mkdir /testinp```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/96364da6-7d1f-4d8f-ae2d-b12cbd4991f7)
+
+```
+hadoop fs -put "D:\Universitas Indonesia\Semester 4\Sistem Basis Data\Hadoop\1M.txt" /testinp
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/9bc3de69-dfbc-4a5f-b164-e863ed2f2d89)
+
+```
+hadoop jar "D:\Universitas Indonesia\Semester 4\Sistem Basis Data\Hadoop\Hadoop_WordCount\target\Hadoop_WordCount-1.0-SNAPSHOT.jar" org.wordcount.WordCount /testinp /output_test
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/306c45eb-429c-42bc-b099-38c59eeca2b6)
+
+### 8.  ```Output```
+```
+hadoop fs -cat /output_test/part-r-00000
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/11bed839-f27f-4152-9b83-a0d0ab432f3c)
+
+```
+stop-all.cmd
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/8187ab18-b71c-4e07-8030-4bc020235910)
+
 ## Resources: 
 1. [Hadoop Tutorial: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
 2. [Hadoop Tutorial: MapReduce Tutorial.](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
