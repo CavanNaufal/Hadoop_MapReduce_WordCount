@@ -82,6 +82,20 @@ We used text files from the [Gutenberg project](https://www.i3s.unice.fr/~jplozi
 
 We highly recommend reading the full in detail walk-through found in the [Official Map Reduce Hadoop Tutorial](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v1.0). And then, the next step is to implement your own work for this application to get started wth Hadoop and Map Reduce. :book: :green_book:
 
+## Installation Tutorial
+
+### 1.  ```Access this oracle website below```
+```
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+```
+
+### 2.  ```Download Java Development Kit 8 (JDK 8) windows x64```
+
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/90dbde65-8167-464d-b9ab-7105b74baa4e)
+
+
+
+
 ## Resources: 
 1. [Hadoop Tutorial: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
 2. [Hadoop Tutorial: MapReduce Tutorial.](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
