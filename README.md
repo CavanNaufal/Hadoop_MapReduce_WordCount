@@ -122,7 +122,7 @@ Then add /bin and /sbin to the Path variable.
 ```
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/991cbac8-1039-466e-ac3e-65fecfd2709d)
 
-### 7.  ```Tambahkan folder data pada file hadoop yang telah di extract```
+### 7.  ```Add a data folder to the extracted hadoop file```
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/26635dfc-54c7-4a18-bf0c-2c75d8fc2d20)
 
 ```
