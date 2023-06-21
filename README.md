@@ -26,7 +26,7 @@
 <p>All of us are undergradute student of Computer Engineering Major, Department of Electrical Engineering, Faculty of Engineering, Universitas Indonesia.</p>
 
 # **Hadoop WordCount**
-This individual work was developed as an assignment for **Netcentric computing and Distributed Systems** course from CCE Department, Faculty of Engineering, Alexandria University Spring 2020 Offering.
+This work was developed as group assignment for **Sistem Basis Data** course from Electrical Engineering Department, Faculty of Engineering, Universitas Indonesia.
 
 <p align='center'><img src="https://itwadi.com/files/Hadoop.png"/></p>
 
