@@ -25,7 +25,7 @@
 </h3>
 <p>All of us are undergradute student of Computer Engineering Major, Department of Electrical Engineering, Faculty of Engineering, Universitas Indonesia.</p>
 
-## Hadoop WordCount Output
+## Hadoop & Python WordCount Output
 ### Table
 | Size/Type | Python(s) | Hadoop(s) | Ratio |
 |     :---:    |     :---:      |     :---:     |     :---:     |
