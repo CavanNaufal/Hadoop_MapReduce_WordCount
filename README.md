@@ -93,8 +93,105 @@ https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/90dbde65-8167-464d-b9ab-7105b74baa4e)
 
+### 3.  ```Set Environment Variables (Java)```
+```
+Add it to the system variable with the name JAVA_HOME, then with the value, namely the path of the installed java folder.
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/8f2c7d08-8d2e-429a-b77d-5303fa151ff9)
+```
+and then add /bin to the variable path
+```
+### 4.  ```Java Verification```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/5db66a20-feb2-4fd7-a4cc-c2321cdac163)
 
+### 5.  ```Download Hadoop (Recommended ver. 3.2.2)```
+```
+https://archive.apache.org/dist/hadoop/common/ 
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/082a3f7b-11df-4419-9afe-0e568e10bf45)
 
+```
+Choose hadoop-3.2.2.tar.gz. then extract the hadoop file that has been downloaded
+```
+
+### 6.  ```Set Environment Variables (Hadoop)```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/0b7ecfc2-e728-4b43-8177-f0d03a21196c)
+
+```
+Then add /bin and /sbin to the Path variable.
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/991cbac8-1039-466e-ac3e-65fecfd2709d)
+
+### 7.  ```Tambahkan folder data pada file hadoop yang telah di extract```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/26635dfc-54c7-4a18-bf0c-2c75d8fc2d20)
+
+```
+and then in the data folder create two folders named namenode and datanode.
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/eb2606f4-309b-4742-b482-97becaf64579)
+
+### 8.  ```Edit core-site.xml, hdfs-site.xml, mapred-site.xml, dan yarn-site.xml```
+etc/hadoop/core-site.xml :
+```
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://localhost:9000</value>
+    </property>
+</configuration>
+```
+etc/hadoop/hdfs-site.xml :
+```
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+</configuration>
+```
+etc/hadoop/mapred-site.xml :
+```
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+    <property>
+        <name>mapreduce.application.classpath</name>
+        <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
+    </property>
+</configuration>
+```
+etc/hadoop/yarn-site.xml :
+```
+<configuration>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.env-whitelist</name>
+        <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,HADOOP_MAPRED_HOME</value>
+    </property>
+</configuration>
+```
+### 9.  ```Edit Hadoop Env on hadoop env.cmd with the downloaded jdk folder path```
+```
+@rem
+set JAVA_HOME = C:"\Program Files\Java\jdk-1.8"
+```
+
+### 10.  ```Download Patch file hadoop for Windows```
+```
+https://github.com/cdarlint/winutils 
+```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/4cf604e1-c16f-4d58-a690-475765cf7717)
+
+### 11.  ```Extract the bin file then move it to the bin folder in the hadoop folder.```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/53536ec8-0e32-4cdf-b80a-121530b0258b)
+
+### 12.  ```Hadoop Verification.```
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/822aded6-3399-4cf4-a34d-289539e54780)
 
 ## Resources: 
 1. [Hadoop Tutorial: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
