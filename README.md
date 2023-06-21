@@ -54,12 +54,9 @@ The key and value type classes have to be serializable by the framework and henc
 
 We used text files from the [Gutenberg project](https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/), in Plain Text UTF-8 format as my input dataset.
 
-## Hadoop: Setting up a Single Node Cluster.
-1. Execute the following command to download Hadoop on machine: `wget https://downloads.apache.org/hadoop/common/hadoop-2.10.0/hadoop-2.10.0.tar.gz`
 
-2. Extract the downloaded file using the command: `tar -xzvf hadoop-2.10.0.tar.gz`
 
-3. Setup the downloaded Hadoop version on machine in a Pseudo Distributed mode. Follow these [steps](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation).
+
 
 
 ## The Application: WordCount
@@ -193,6 +190,7 @@ https://github.com/cdarlint/winutils
 ### 12.  ```Hadoop Verification.```
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/822aded6-3399-4cf4-a34d-289539e54780)
 
+Setup the downloaded Hadoop version on machine in a Pseudo Distributed mode. Follow these [steps](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation).
 ## Resources: 
 1. [Hadoop Tutorial: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
 2. [Hadoop Tutorial: MapReduce Tutorial.](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
