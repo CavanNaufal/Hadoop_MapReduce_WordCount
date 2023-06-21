@@ -268,7 +268,7 @@ hadoop fs -cat /output_test/part-r-00000
 ```
 stop-all.cmd
 ```
-![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/8187ab18-b71c-4e07-8030-4bc020235910)
+![Screenshot 2023-06-21 175438](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/88435892/ba60652d-06f6-41d3-aa9c-109cb396bce0)
 
 ## Resources: 
 1. [Hadoop Tutorial: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
