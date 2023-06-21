@@ -25,6 +25,20 @@
 </h3>
 <p>All of us are undergradute student of Computer Engineering Major, Department of Electrical Engineering, Faculty of Engineering, Universitas Indonesia.</p>
 
+## Hadoop WordCount Output
+### Table
+| Size/Type | Python(s) | Hadoop(s) | Ratio |
+|     :---:    |     :---:      |     :---:     |     :---:     |
+| 1 MB        | 0.137     | 30.242    | 0.00453    |
+| 100 MB     | 27.021       | 62.245      | 0.43411    |
+| 200 MB     | 42.617       | 71.460      | 0.59637    |
+| 500 MB     | 243.039       | 93.246      | 2.60643    |
+| 1000 MB     | 1905.303       | 197.669      | 9.63885    |
+
+### Graph
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/c655b25c-619b-492b-906f-be74d3451f8f)
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/ec430f00-9315-4474-abc4-8fb1bad061d0)
+
 # **Hadoop WordCount**
 This work was developed as group assignment for **Sistem Basis Data** course from Electrical Engineering Department, Faculty of Engineering, Universitas Indonesia.
 
@@ -80,20 +94,6 @@ We used text files from the [Gutenberg project](https://www.i3s.unice.fr/~jplozi
 We highly recommend reading the full in detail walk-through found in the [Official Map Reduce Hadoop Tutorial](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v1.0). And then, the next step is to implement your own work for this application to get started wth Hadoop and Map Reduce. :book: :green_book:
 
 ---
-
-## Hadoop WordCount Output
-### Table
-| Size/Type | Python(s) | Hadoop(s) | Ratio |
-|     :---:    |     :---:      |     :---:     |     :---:     |
-| 1 MB        | 0.137     | 30.242    | 0.00453    |
-| 100 MB     | 27.021       | 62.245      | 0.43411    |
-| 200 MB     | 42.617       | 71.460      | 0.59637    |
-| 500 MB     | 243.039       | 93.246      | 2.60643    |
-| 1000 MB     | 1905.303       | 197.669      | 9.63885    |
-
-### Graph
-![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/c655b25c-619b-492b-906f-be74d3451f8f)
-![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/ec430f00-9315-4474-abc4-8fb1bad061d0)
 
 
 ## Installation Tutorial
