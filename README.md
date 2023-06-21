@@ -224,25 +224,25 @@ https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/ab345efa-0db9-4053-b131-597fb2386791)
 
 ### 4.  ```Then create a jar file with maven.```
-```mvn clean```
-![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/a90118d1-3f16-44f4-94f4-68202f64be31)
-```mvn install```
+```mvn clean```<br />
+![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/a90118d1-3f16-44f4-94f4-68202f64be31) <br />
+```mvn install```<br />
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/585b8d91-01a8-427f-8bfd-509abb2702a7)
-
-Maka pada target folder terdapat file jar.	
+<br />
+Maka pada target folder terdapat file jar.	<br />
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/c6cc9369-9f8f-4265-b564-aa2cff402a9a)
-
+<br />
 ### 5.  ```Create input file (.txt)```
-example : 
+example : <br />
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/28db6b2a-d718-41da-b380-229e22f1b1f1)
 
-### 6.  ```run cmd as administrator then cd to the sbin folder```
+### 6.  ```run cmd as administrator then cd to the sbin folder```<br />
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/1430c429-5591-4aa2-8e66-79b6f14529ea)
 
-### 7.  ```Run Hadoop and jps to make sure hadoop runs properly.start-all. cmd```
+### 7.  ```Run Hadoop and jps to make sure hadoop runs properly.start-all. cmd```<br />
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/06ae7964-3c9f-47cc-882a-2e7b69be37ff)
 
-```hadoop fs -mkdir /testinp```
+```hadoop fs -mkdir /testinp```<br />
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/96364da6-7d1f-4d8f-ae2d-b12cbd4991f7)
 
 ```
