@@ -18,7 +18,7 @@
   - 2106731573
 </h3>
 <h3 align="center">
-  <a href="https://github.com/">
+  <a href="https://github.com/fahrezyyh">
     Fahrezy Hutapea
   </a>
   - 2106731466
