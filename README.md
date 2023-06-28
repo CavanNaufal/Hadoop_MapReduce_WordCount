@@ -90,6 +90,20 @@ We highly recommend reading the full in detail walk-through found in the [Offici
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/c655b25c-619b-492b-906f-be74d3451f8f)
 ![image](https://github.com/CavanNaufal/Hadoop_MapReduce_WordCount/assets/87458424/ec430f00-9315-4474-abc4-8fb1bad061d0)
 
+### Analyisis 
+From the graph and table above, it can be seen that Hadoop takes longer compared to Python for small file sizes. Hadoop only demonstrates its effectiveness for files larger than 500MB, being more than 2.6 times faster than Python.
+
+Why does this happen?
+The problem in handling small files in Hadoop mainly occurs in two main aspects: the Hadoop Distributed File System (HDFS) and MapReduce tasks.
+
+<h4>Masalah dengan HDFS:</h4>
+HDFS tidak dirancang untuk menangani banyak file kecil. Setiap file, direktori, dan blok dalam HDFS direpresentasikan sebagai objek dalam memori namenode. Setiap objek tersebut memakan sekitar 150 byte. Jika terdapat banyak file kecil, jumlah objek yang harus direpresentasikan di memori namenode menjadi sangat besar, menyebabkan peningkatan penggunaan memori yang signifikan. Hal ini menjadi sulit diatasi dengan perangkat keras saat ini. Jumlah file yang sangat besar, seperti miliaran file, tidak dapat ditangani dengan efisien.
+
+<h4>Masalah pada tugas MapReduce: </h4>
+Tugas MapReduce biasanya memproses blok masukan dalam satu waktu (menggunakan FileInputFormatDefault). Jika file sangat kecil dan jumlahnya banyak, setiap tugas pemetaan (map task) akan memproses sedikit masukan, dan jumlah tugas pemetaan menjadi sangat banyak. Hal ini mengakibatkan tambahan overhead manajemen yang signifikan. Sebagai perbandingan, jika terdapat satu file berukuran 1GB yang terbagi menjadi 16 blok berukuran 64MB, dan terdapat 10.000 file berukuran 100KB, maka 10.000 file tersebut akan menggunakan satu tugas pemetaan masing-masing, dan waktu pemrosesan akan menjadi puluhan atau ratusan kali lebih lambat dibandingkan dengan file masukan tunggal yang lebih besar.
+
+
+
 ### Dataset
 [Gutenberg project](https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/)
 
