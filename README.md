@@ -94,13 +94,13 @@ We highly recommend reading the full in detail walk-through found in the [Offici
 From the graph and table above, it can be seen that Hadoop takes longer compared to Python for small file sizes. Hadoop only demonstrates its effectiveness for files larger than 500MB, being more than 2.6 times faster than Python.
 
 Why does this happen?
-The problem in handling small files in Hadoop mainly occurs in two main aspects: the Hadoop Distributed File System (HDFS) and MapReduce tasks.
+The issues in handling small files in Hadoop mainly occurs in two main aspects: the Hadoop Distributed File System (HDFS) and MapReduce tasks.
 
-<h4>Masalah dengan HDFS:</h4>
-HDFS tidak dirancang untuk menangani banyak file kecil. Setiap file, direktori, dan blok dalam HDFS direpresentasikan sebagai objek dalam memori namenode. Setiap objek tersebut memakan sekitar 150 byte. Jika terdapat banyak file kecil, jumlah objek yang harus direpresentasikan di memori namenode menjadi sangat besar, menyebabkan peningkatan penggunaan memori yang signifikan. Hal ini menjadi sulit diatasi dengan perangkat keras saat ini. Jumlah file yang sangat besar, seperti miliaran file, tidak dapat ditangani dengan efisien.
+<h4>Issues with HDFS::</h4>
+HDFS is not designed to handle a large number of small files. Each file, directory, and block in HDFS is represented as an object in the namenode's memory. Each of these objects consumes around 150 bytes. If there are numerous small files, the number of objects that need to be represented in the namenode's memory becomes very large, leading to a significant increase in memory usage. This becomes difficult to handle with current hardware. A very large number of files, such as billions of files, cannot be efficiently handled.
 
-<h4>Masalah pada tugas MapReduce: </h4>
-Tugas MapReduce biasanya memproses blok masukan dalam satu waktu (menggunakan FileInputFormatDefault). Jika file sangat kecil dan jumlahnya banyak, setiap tugas pemetaan (map task) akan memproses sedikit masukan, dan jumlah tugas pemetaan menjadi sangat banyak. Hal ini mengakibatkan tambahan overhead manajemen yang signifikan. Sebagai perbandingan, jika terdapat satu file berukuran 1GB yang terbagi menjadi 16 blok berukuran 64MB, dan terdapat 10.000 file berukuran 100KB, maka 10.000 file tersebut akan menggunakan satu tugas pemetaan masing-masing, dan waktu pemrosesan akan menjadi puluhan atau ratusan kali lebih lambat dibandingkan dengan file masukan tunggal yang lebih besar.
+<h4>Issues with MapReduce tasks: </h4>
+MapReduce tasks typically process input blocks at a time (using FileInputFormatDefault). If the files are very small and there are a large number of them, each map task will process a small amount of input, and the number of map tasks becomes very high. This results in additional significant management overhead. For comparison, if there is one file of 1GB size divided into 16 blocks of 64MB each, and there are 10,000 files of 100KB size, then each of the 10,000 files will use one map task each, and the processing time will be tens or hundreds of times slower compared to a single larger input file.
 
 
 
